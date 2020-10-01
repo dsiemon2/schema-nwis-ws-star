@@ -74,7 +74,7 @@ databaseChangeLog:
       author: dsiemon
       id: "create.index.${NWIS_SCHEMA_NAME}.monitoring_location_site_active"
       preConditions:
-        - onFail: MARK_RAN
+        - onFail: MARK_RAN  
         - onError: HALT
         - not:
             - indexExists:

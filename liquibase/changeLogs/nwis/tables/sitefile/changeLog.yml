@@ -56,7 +56,7 @@ databaseChangeLog:
         - sql: alter table if exists ${NWIS_SCHEMA_NAME}.sitefile set logged
 
   - changeSet:
-      author: dsiemon
+      author: dsiemon 
       id: "alter.table.${NWIS_SCHEMA_NAME}.sitefile.IOW-587"
       preConditions:
         - onFail: MARK_RAN
@@ -67,5 +67,5 @@ databaseChangeLog:
       changes:
         - sqlFile:
             path: sitefile-IOW-587.sql
-            relativeToChangelogFile: true
+            relativeToChangelogFile: true 
 
